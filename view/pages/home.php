@@ -1,24 +1,24 @@
 <?php
-    $cssPagina = ['../assets/style.css']; 
+$cssPagina = ['../assets/css/style.css'];
+require '../components/button.php';
+require '../components/card.php';
+require '../components/head.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
 <body>
-    <h1>Título da página</h1>
-    <?= renderizarBotao('primary', ) ?>
-    <br><br>
-    <?= renderizarBotao('secondary', ) ?>
-    <br><br>
-    <?= renderizarBotao('secondary', ) ?>
-
-    <h1>Título da página</h1>
-    <br>
+    <h1>Bem-vindo</h1>
     <div class="container">
-        <?= textField(true, 'email') ?>
 
+        <?= renderizarBotao("Iniciar") ?>
+
+        <h1>Título da página</h1>
     </div>
-
+    <div class="cardes">
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+        <?= criarCard("../img/image.png", "titulo", "Descrição") ?>
+    </div>
 </body>
-
-</html>
