@@ -1,5 +1,4 @@
 <?php
-$cssPagina = ['../assets/css/style.css'];
 require '../components/button.php';
 require '../components/card.php';
 require '../components/head.php';
